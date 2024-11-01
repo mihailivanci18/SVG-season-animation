@@ -1,0 +1,126 @@
+.snow-container {
+    position: relative;
+    overflow: hidden;
+    width: 300px;
+    height: 500px;
+}
+
+.snowflake {
+    fill: #FFFFFF;
+    animation: snowfall 5s linear infinite;
+}
+
+@keyframes snowfall {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(500px);
+        opacity: 0;
+    }
+}
+
+
+
+
+.fall-container {
+    position: relative;
+    overflow: hidden;
+    width: 800px;
+    height: 200px;
+}
+
+.fall-leaf {
+    animation: fall 6s linear infinite;
+    opacity: 0.9; 
+}
+
+
+@keyframes fall {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(500px);
+        opacity: 0;
+    }
+}
+
+
+
+
+.sunset-container {
+    position: relative;
+    overflow: hidden;
+    width: 800px;
+    height: 400px;
+}
+
+.setting-sun {
+    animation: sunset linear infinite;
+    animation-duration: 10s; 
+}
+
+
+@keyframes sunset {
+    0% {
+        transform: translateY(0); 
+        opacity: 1; 
+    }
+    50% {
+        transform: translateY(100px); 
+        opacity: 0.5; 
+    }
+    100% {
+        transform: translateY(200px); 
+        opacity: 0; 
+    }
+}
+
+
+
+
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f8ff;
+  }
+  
+  .fluturi-svg {
+    width: 300px;
+    height: 300px;
+  }
+  
+  @keyframes zborFluture {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+  
+  .fluture1 {
+    animation: zborFluture 3s ease-in-out infinite;
+    animation-delay: 0s;
+  }
+  
+  .fluture2 {
+    animation: zborFluture 3s ease-in-out infinite;
+    animation-delay: 1s;
+  }
+  
+  .fluture3 {
+    animation: zborFluture 3s ease-in-out infinite;
+    animation-delay: 2s;
+  }
+  
